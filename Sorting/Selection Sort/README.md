@@ -15,9 +15,10 @@ If there are n elements to be sorted then, the process mentioned above should be
 *Selection sort animation. Red is current min. Yellow is sorted list. Blue is current item.*
 
 ####Complexity Analysis
-- Worst Case - O(n^2)
-- Average Case - O(n^2)
-- Best Case - O(n^2)
+- Worst Case - O(n<sup>2</sup>)
+- Average Case - O(n<sup>2</sup>)
+- Best Case - O(n<sup>2</sup>)
+
 ### More on this topic
 - https://en.wikipedia.org/wiki/Selection_sort
 - http://quiz.geeksforgeeks.org/selection-sort/

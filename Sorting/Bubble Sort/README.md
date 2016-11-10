@@ -16,8 +16,8 @@ Starting from the beginning of the list, compare every adjacent pair, swap their
 ![Bubble sort gif](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 ####Complexity Analysis
-- Worst Case - O(n^2)
-- Average Case - O(n^2)
+- Worst Case - O(n<sup>2</sup>)
+- Average Case - O(n<sup>2</sup>)
 - Best Case - O(n)
 ### More on this topic
 - http://en.wikipedia.org/wiki/Bubble_sort
