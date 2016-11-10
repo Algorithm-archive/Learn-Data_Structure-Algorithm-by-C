@@ -21,6 +21,11 @@ Other than these there are some derived data types. they are -
 - [C data types - Tutorialspoint](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 - [C programming data types - programiz](http://www.programiz.com/c-programming/c-data-types)
 
+###Big-O Cheat Sheet
+
+
+[Big-O Cheat Sheet Link](http://bigocheatsheet.com/)
+
 ###How to Use
 To test or use codes from this repository you can use any popular IDE, online Editor or compile them locally using GCC compiler.
 Following links will help on how to compile a C code in linux.
