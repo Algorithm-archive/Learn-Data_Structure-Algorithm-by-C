@@ -1,21 +1,15 @@
 #include<stdio.h>
-#define EMPTY '-'
-#define QUEEN 'Q'
+#include<string.h>
 
-char queen[100][100];
-int n;
+#define EMPTY 0
+#define QUEEN 1
+
+int queen[100][100];
+int n, total_solutions;
 
 void initializeBoard(int n)
 {
-    int i,j;
-
-    for(i=1;i<=n;i++)
-    {
-        for(j=1;j<=n;j++)
-        {
-            queen[i][j] = EMPTY;
-        }
-    }
+    memset(queen, EMPTY, sizeof(queen));
 }
 
 void printBoard()
@@ -26,24 +20,18 @@ void printBoard()
     {
         for(j=1;j<=n;j++)
         {
-            printf("%c ", queen[i][j]);
+            printf("%c ", queen[i][j] ? 'Q' : '-');
         }
         printf("\n");
     }
+    printf("\n");
 }
 
 int haveConflict(int row, int col)
 {
     int i,j;
 
-    //check queen column
-    for(i=1;i<=n;i++)
-    {
-        if(queen[row][i] == QUEEN)
-            return 1;
-    }
-
-    //check queen row
+    //check the column positions above this position
     for(i=1;i<row;i++)
     {
         if(queen[i][col] == QUEEN)
@@ -68,46 +56,41 @@ int haveConflict(int row, int col)
 }
 
 //target is to place one queen in each row so that no one collides with each other
-//Here placed_queen parameter shows how much queen we've already placed, also how much row we've already covvered
-void backtrack(int placed_queen)
+//Here queen_row parameter shows the current we're going to place a Queen
+void backtrack(int queen_row)
 {
-    int i, success = 0,next_move;
-    if(placed_queen > n) return; // All queens are placed properly
+    int i;
+
+    if(queen_row > n)
+    {
+        total_solutions++;
+        printBoard();
+        return;
+    }
 
     for(i=1;i<=n;i++)
     {
-        if(queen[placed_queen][i] == QUEEN) //If we found already placed queen, remove it
+        if(!haveConflict(queen_row, i))
         {
-            //remove queen
-            queen[placed_queen][i] = EMPTY;
-            continue;
-        }
+            queen[queen_row][i] = QUEEN;
 
-        if(!haveConflict(placed_queen, i))
-        {
-            //place a queen piece
-            success = 1;
+            backtrack(queen_row + 1);
 
-            queen[placed_queen][i] = QUEEN;
-
-            break;
+            queen[queen_row][i] = EMPTY;
         }
     }
-
-    next_move = success ? (placed_queen + 1) : (placed_queen -1);
-
-    backtrack(next_move);
 }
 
 int main()
 {
+    printf("Enter Board size: ");
     scanf("%d", &n);
 
     initializeBoard(n);
 
-    backtrack(0);
+    backtrack(1);
 
-    printBoard();
+    printf("Total Solutions: %d\n", total_solutions);
 
     return 0;
 }
