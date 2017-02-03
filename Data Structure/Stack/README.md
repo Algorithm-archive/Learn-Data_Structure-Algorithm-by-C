@@ -25,11 +25,12 @@ To use a stack efficiently, we need to check the status of stack as well. For th
 - **isEmpty()** − check if stack is empty.
 
 
-####Complexity Analysis
+#### Complexity Analysis
 - Insertion - O(1)
 - Deletion - O(1)
 - Access - O(n)
 - Search - O(n)
+
 ### More on this topic
 - https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
 - https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm
