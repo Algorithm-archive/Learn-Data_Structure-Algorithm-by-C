@@ -45,3 +45,6 @@ run it using:
 
 ### Useful Links:
 * [Algorithms, 4th Edition (book by: Robert Sedgewick and Kevin Wayne)](http://algs4.cs.princeton.edu/home/)
+* [Khan Academy tutorial on Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
+* [Topcoder Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
+* [GeeksforGeeks](http://www.geeksforgeeks.org/)
