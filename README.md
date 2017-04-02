@@ -5,26 +5,22 @@
 ### Primitive types and built-in data structures in C
 C is a statically typed language. Each of the variables should be type casted.
 There are five basic data types associated with variables:
-- int - integer: a whole number.
-- float - floating point value: i.e. a number with a fractional part.
-- double - a double-precision floating point value.
-- char - a single character.
-- void - valueless special purpose type.
+- **int** - integer: a whole number.
+- **float** - floating point value: i.e. a number with a fractional part.
+- **double** - a double-precision floating point value.
+- **char** - a single character.
+- **void** - valueless special purpose type.
 
 Other than these there are some derived data types. they are -
-- Arrays
-- Pointers
-- Structures
-- Enumeration
+- **Arrays**
+- **Pointers**
+- **Structures**
+- **Enumeration**
 
 ##### More details about data types in C:
 - [C data types - Tutorialspoint](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 - [C programming data types - programiz](http://www.programiz.com/c-programming/c-data-types)
 
-### Big-O Cheat Sheet
-
-
-[Big-O Cheat Sheet Link](http://bigocheatsheet.com/)
 
 ### How to Use
 To test or use codes from this repository you can use any popular IDE, online Editor or compile them locally using GCC compiler.
@@ -48,3 +44,8 @@ run it using:
 * [Khan Academy tutorial on Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
 * [Topcoder Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
 * [GeeksforGeeks](http://www.geeksforgeeks.org/)
+* [hackerearth Tutorial](https://www.hackerearth.com/practice/)
+
+### Big-O Cheat Sheet
+
+[Big-O Cheat Sheet Link](http://bigocheatsheet.com/)
