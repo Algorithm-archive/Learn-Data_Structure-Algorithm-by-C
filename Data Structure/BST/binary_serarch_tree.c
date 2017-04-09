@@ -68,6 +68,30 @@ void inOrderPrint(node *rootNode) // InOrder Traversal (left-root-right)
     inOrderPrint(rootNode->rightChild);
 }
 
+void preOrderPrint(node *rootNode) // PreOrder Traversal (root-left-right)
+{
+    if(rootNode==NULL)
+        return;
+
+    printf("%d ", rootNode->number);
+
+    preOrderPrint(rootNode->leftChild);
+
+    preOrderPrint(rootNode->rightChild);
+}
+
+void postOrderPrint(node *rootNode) // PostOrder Traversal (left-right-root)
+{
+    if(rootNode==NULL)
+        return;
+
+    postOrderPrint(rootNode->leftChild);
+
+    postOrderPrint(rootNode->rightChild);
+
+    printf("%d ", rootNode->number);
+}
+
 node* searchOnTree(int value)
 {
     node* currentNode = root;
